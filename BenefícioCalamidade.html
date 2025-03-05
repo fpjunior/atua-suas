@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Benefício Eventual por Calamidade</title>
+    <link rel="stylesheet" href="/BenefícioCalamidade.css">
+</head>
+<body>
+<br><br><br><br>
+<br><br>
+    <div class="container">
+        <h1>Cadastro de Benefício Eventual por Calamidade</h1>
+    
+        <form action="#" method="post">
+            <div class="section">
+                <h2 class="section-title">ENCAMINHAMENTO</h2>
+    
+                <label for="beneficiario">Beneficiário(a)</label>
+                <input type="text" id="beneficiario" name="beneficiario" required>
+    
+                <label for="endereco">Endereço Completo</label>
+                <input type="text" id="endereco" name="endereco" required>
+    
+                <div class="rg1">
+                  <label for="rg">RG</label>
+                  <input class="rg" type="text" id="rg" name="rg" required>
+                </div>
+
+                <div class="cpf1">                  
+                  <label for="cpf">CPF</label>
+                  <input class="cpf" type="text" id="cpf" name="cpf" required>
+                </div>
+               
+                <div class="nis1">
+                  <label for="nis">NIS</label>
+                  <input class="nis" type="text" id="nis" name="nis" required>
+                </div> 
+                
+                <div class="tel1">
+                  <label for="telefone">Telefone</label>
+                  <input class="tel" type="tel" id="telefone" name="telefone" required>
+                </div>
+                  
+                          
+            </div>
+    
+            <div class="section">
+                <br>
+    
+                <table border="1">
+                    <thead>
+                      <tr>
+                        <th>Tipo do Benefício</th>
+                        <th>Bem Material</th>
+                        <th>Quantidade</th>
+                        <th>Pecúnia</th>
+                        <th>Valor (R$)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Cesta Básica (vide rodapé)</td>
+                        <td><input type="checkbox"/></td>
+                        <td></td>
+                        <td><input type="checkbox"/></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Kit Dormitório (Cobertor, travesseiro, lençol e fronhas)</td>
+                        <td><input type="checkbox"/></td>
+                        <td></td>
+                        <td><input type="checkbox"/></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Kit Higiene Pessoal (Toalha de banho, sabonete, escova de dente, creme dental, desodorante e absorvente)</td>
+                        <td><input type="checkbox"/></td>
+                        <td></td>
+                        <td><input type="checkbox"/></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Kit Material de Limpeza (vide rodapé)</td>
+                        <td><input type="checkbox"/></td>
+                        <td></td>
+                        <td><input type="checkbox"/></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Colchão Solteiro </td>
+                        <td><input type="checkbox"/></td>
+                        <td></td>
+                        <td><input type="checkbox"/></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Outros (Especificar)</td>
+                        <td><input type="checkbox"/></td>
+                        <td></td>
+                        <td><input type="checkbox"/></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+    
+                <label for="descricao_atendimento">Breve Descrição do Atendimento</label>
+                <textarea id="descricao_atendimento" name="descricao_atendimento" rows="4" required></textarea>
+            </div>
+    
+            <div class="footer">
+                <p>Para informações sobre os itens, consulte os detalhes abaixo.</p>
+                <p><strong>Cesta Básica:</strong> Inclui alimentos básicos e perecíveis.</p>
+                <p><strong>Kit Material de Limpeza:</strong> Inclui produtos de limpeza como detergente, esponjas, etc.</p>
+                <p><strong>Observações:</strong> A descrição do atendimento deve ser clara e objetiva.</p>
+            </div>
+    
+            <div class="form-group">
+                <button type="submit" class="btn-submit">Enviar Cadastro</button>
+            </div>
+        </form>
+    </div>
+    
+    </body>
+</html>

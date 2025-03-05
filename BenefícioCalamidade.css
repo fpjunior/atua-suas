@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./logo SAS.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    background-size: cover; /* Faz a imagem caber sem cortar */
+    background-position: top center; /* Mantém a imagem centralizada no topo */
+    background-repeat: no-repeat;
+}
+.container {
+     /* max-width: 825px; */
+     margin: 15px;
+     margin-top: 2%;
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+label {
+    font-weight: bold;
+    margin-top: 5px;
+    display: block;
+
+}
+
+.rg1, .cpf1, .nis1, .tel1 {
+    /* margin-top: 100%; */
+    /* width: 15%; */
+    border-radius: 4px;
+    display: inline-block;
+    width: 22%; /* Ajuste para melhor distribuição */
+    margin-right: 2%;
+}
+
+/* Ajusta os tamanhos específicos de CPF, RG, Telefone e NIS */
+.rg1, .cpf1, .nis1, .tel1 {
+
+}
+
+input, select, textarea {
+    margin: 2px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+    width: 95%; 
+    padding: 8px; 
+    font-size: 16px;
+}
+
+.section-title {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+    display: flex;
+    justify-content: center;
+}
+.footer {
+    font-size: 0.9em;
+    margin-top: 20px;
+    color: #555;
+}
+.footer a {
+    text-decoration: none;
+    color: #007bff;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
