@@ -17,9 +17,10 @@ h2 {
 }
 
 table {
-    width: 100%;
+    width: 80%;
     border-collapse: collapse;
     margin-top: 40px;
+    margin-left: 10%;
 }
 th, td {
     border: 1px solid black;
@@ -29,9 +30,13 @@ th, td {
 th {
     background-color: #f2f2f2;
 }
-
+button {
+    margin-top: 1%;
+    margin-left: 10%;
+}
 .footer {
     font-size: 0.9em;
     margin-top: 20px;
+    margin-left: 10%;
     color: #555;
 }
