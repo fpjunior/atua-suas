@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./logo SAS.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    background-size: cover; /* Faz a imagem caber sem cortar */
+    background-position: top center; /* Mantém a imagem centralizada no topo */
+    background-repeat: no-repeat;
+}
+h2 {
+    margin-top: 8%;
+    margin-left: 30%;
+}
+
+table {
+    width: 95%;
+    margin-top: 1%;
+    margin-left: 2%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}

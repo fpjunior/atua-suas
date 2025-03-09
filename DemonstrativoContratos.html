@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/DemonstrativoContratos.css">
+    <title>Tabela de Contratos</title>
+    
+</head>
+<body>
+    <h2>MAPA DEMONSTRATIVO DE CONTRATOS  EXERCÍCIO 2024</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Número de contrato / Ano</th>
+                <th>Modalidade / Número / Ano</th>
+                <th>Objeto</th>
+                <th>CNPJ/CPF</th>
+                <th>Situação</th>
+                <th>Valor Global do Contrato</th>
+                <th>Data de Início</th>
+                <th>Data de Término</th>
+                <th>Observações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Gerando 20 linhas -->
+            <script>
+                for (let i = 1; i <= 10; i++) {
+                    document.write(`<tr>
+                        <td>Contrato ${i}/2025</td>
+                        <td>Modalidade ${i}/2025</td>
+                        <td>Descrição do objeto ${i}</td>
+                        <td>00.000.000/0000-00</td>
+                        <td>Ativo</td>
+                        <td>R$ ${(Math.random() * 100000).toFixed(2)}</td>
+                        <td>01/01/2025</td>
+                        <td>31/12/2025</td>
+                        <td>Observação ${i}</td>
+                    </tr>`);
+                }
+            </script>
+        </tbody>
+    </table>
+</body>
+</html>
