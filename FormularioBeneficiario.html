@@ -49,3 +49,36 @@
         <p><strong>ATENÇÃO:</strong> <br> NOME: COMPLETO SEM ABREVIAÇÃO <br> CPF: SEM PONTO E SEM TRAÇO</p>
        
     </div>
+    
+    <script>
+        function adicionarLinha() {
+            let tabela = document.getElementById("cadastroTable").getElementsByTagName('tbody')[0];
+            let novaLinha = tabela.insertRow();
+            novaLinha.innerHTML = `
+                <td>
+                    <select>
+                        <option value="">Selecione</option>
+                        <option value="Cidade1">Cidade 1</option>
+                        <option value="Cidade2">Cidade 2</option>
+                        <option value="Cidade3">Cidade 3</option>
+                    </select>
+                </td>
+                <td><input type="text" placeholder="Nome do Responsável"></td>
+                <td><input type="text" placeholder="CPF"></td>
+                <td>
+                    <select>
+                        <option value="">Selecione</option>
+                        <option value="Benefício1">Benefício 1</option>
+                        <option value="Benefício2">Benefício 2</option>
+                        <option value="Benefício3">Benefício 3</option>
+                    </select>
+                </td>
+                <td><button onclick="removerLinha(this)">Remover</button></td>
+            `;
+        }
+        
+        function removerLinha(botao) {
+            let linha = botao.parentNode.parentNode;
+            linha.parentNode.removeChild(linha);
+        }
+    </script>
